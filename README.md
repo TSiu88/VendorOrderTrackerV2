@@ -126,6 +126,8 @@ _Some example test:_
 
 _There are currently no known bugs in this program_
 
+_README image paths unable to load within project so is currently outside of project folders_
+
 ## Support and contact details
 
 _If there are any question or concerns please contact me at my [email](mailto:tsiu88@gmail.com). Thank you._
@@ -133,6 +135,7 @@ _If there are any question or concerns please contact me at my [email](mailto:ts
 ### License
 
 *This software is licensed under the MIT license*
+
 *Background Photo by Ales Krivec on [Unsplash](https:/unsplash.com/photos/QnNqGoCnBg0)*
 
 Copyright (c) 2020 **_Tiffany Siu_**
