@@ -84,25 +84,31 @@ This program has an object within an object using C# with Razor and HTML.  The s
 _Here is a preview of what it looks like:_
 
 **Homepage**
-![Snippet of homepage](vendorordertracker/wwwroot/img/snippet1.png)
+
+![Snippet of homepage](readme-img/snippet1.png)
 
 **Vendor List**
-![Snippet of vendor list](vendorordertracker/wwwroot/img//snippet3.png)
+
+![Snippet of vendor list](readme-img/snippet3.png)
 
 **Order Input**
-![Snippet of order input](vendorordertracker/wwwroot/img//snippet4.png)
+
+![Snippet of order input](readme-img/snippet4.png)
 
 <details>
   <summary>Click to expand to view more screenshots</summary>
 
 **Vendor Input**
-![Snippet of vendor input](vendorordertracker/wwwroot/img//snippet2.png)
+
+![Snippet of vendor input](readme-img/snippet2.png)
 
 **Vender Orders**
-![Snippet of output box](vendorordertracker/wwwroot/img//snippet5.png)
+
+![Snippet of output box](readme-img/snippet5.png)
 
 **Order Details**
-![Snippet of output box](vendorordertracker/wwwroot/img//snippet6.png)
+
+![Snippet of output box](readme-img/snippet6.png)
 
 </details>
 
@@ -111,9 +117,10 @@ _Here is a preview of what it looks like:_
 _Tests are done through MSTest and are run from the command line prompt with `dotnet test` in the test folder._
 
 _Some example test:_
-![Snippet of an example test](vendorordertracker/wwwroot/img//tester1.png)
 
-![Snippet of an example result](vendorordertracker/wwwroot/img//test2.png)
+![Snippet of an example test](readme-img/tester1.png)
+
+![Snippet of an example result](readme-img/tester2.png)
 
 ## Known Bugs
 
@@ -126,6 +133,6 @@ _If there are any question or concerns please contact me at my [email](mailto:ts
 ### License
 
 *This software is licensed under the MIT license*
-*Background Photo by Ales Krivec on [Unsplash](https://unsplash.com/photos/QnNqGoCnBg0)*
+*Background Photo by Ales Krivec on [Unsplash](https:/unsplash.com/photos/QnNqGoCnBg0)*
 
 Copyright (c) 2020 **_Tiffany Siu_**
