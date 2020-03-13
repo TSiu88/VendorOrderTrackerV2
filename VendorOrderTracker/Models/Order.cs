@@ -1,21 +1,21 @@
 using System;
 using System.Collections.Generic;
 
-namespace ProjectName.Models
+namespace VenderOrders.Models
 {
-  public class Item
+  public class Order
   {
     public string Property { get; set; }
-    private static List<Item> _instances = new List<Item>() {};
+    private static List<Order> _instances = new List<Order>() {};
     public int Id { get; }
-    public Item(string property)
+    public Order(string property)
     {
       Property = property;
       _instances.Add(this);
       Id = _instances.Count;
     }
 
-    public static List<Item> GetAll()
+    public static List<Order> GetAll()
     {
       return _instances;
     }
@@ -25,7 +25,7 @@ namespace ProjectName.Models
       _instances.Clear();
     }
 
-    public static Item Find(int searchId)
+    public static Order Find(int searchId)
     {
       return _instances[searchId-1];
     }

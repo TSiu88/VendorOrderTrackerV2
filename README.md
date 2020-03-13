@@ -1,16 +1,15 @@
-# _Assignment Name_
+# _[Vender Order Tracker](https://github.com/TSiu88/VenderOrderTracker)_
 
-#### _Brief desc of Project, 02.6.2020_
-<!-- ##### _Version 1.1 Updated 01.11.2020_ -->
+#### _Week 10 Friday Independent Assignment for [Epicodus](https://www.epicodus.com/), 03.13.2020_
 
 #### By _**Tiffany Siu**_
 
 <!-- [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive) -->
 <!-- [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) -->
-<!-- [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) -->
-<!-- ![LastCommit](https://img.shields.io/github/last-commit/tsiu88/wordcounter-csharp)
-![Languages](https://img.shields.io/github/languages/top/tsiu88/wordcounter-csharp)
-[![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/) -->
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+![LastCommit](https://img.shields.io/github/last-commit/tsiu88/VenderOrderTracker)
+![Languages](https://img.shields.io/github/languages/top/tsiu88/VenderOrderTracker)
+[![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
 
 ---
 ## Table of Contents
@@ -21,11 +20,12 @@
     - [Other Technologies Used](#other-technologies-used)
 3. [Notable Features](#notable-features)
 4. [Specifications](#specifications)
-5. [Screenshots](#screenshots)
-6. [Test Case Example](#test-case-example)
-7. [Known Bugs](#known-bugs)
-8. [Support and Contact Details](#support-and-contact-details)
-9. [License](#license)
+5. [User Stories](#user-stories)
+6. [Screenshots](#screenshots)
+7. [Test Case Example](#test-case-example)
+8. [Known Bugs](#known-bugs)
+9. [Support and Contact Details](#support-and-contact-details)
+10. [License](#license)
 ---
 ## Description
 
@@ -35,57 +35,27 @@ _README under construction_
 ## Setup/Installation Requirements
 
 ### Requirements to Run
-<!-- #### C#
 * _.NET Core_
 * _ASP.NET Core MVC_
 * _Command Prompt_
-* _Web Browser_ -->
-
-<!-- #### Javascript
 * _Web Browser_
-* _Webpack_
-* _Node.js_
-* _NPM_
-* _API KEY_ -->
 
 ### Instructions
 
-<!-- *This page may be viewed by:*
+*This page may be viewed by:*
 
 1. Download and install .NET Core from the [official website](https://dotnet.microsoft.com/download/dotnet-core/)
-2. Clone the [repository](https://github.com/TSiu88/csharp-bakery.git) from my [GitHub page](https://github.com/TSiu88)
+2. Clone the [repository](https://github.com/TSiu88/VenderOrderTracker.git) from my [GitHub page](https://github.com/TSiu88)
 3. Use a command line interface to move to the repository's directory with `cd project-directory`
 4. Run `dotnet restore` and `dotnet build` in command line interface of the repository's directory
 5. Run `dotnet run` to start up the program in the command line interface
-6. Type the URL listed under "Now listening on:" into a web browser  -->
-
-<!-- 1. Download and install Node.js from the [official website](https://nodejs.org/en/download/)
-2. Clone the [repository](https://github.com/TSiu88/beep-boop.git) from my [GitHub page](https://github.com/TSiu88)
-3. Use a command line/Bash to move to the project directory with `cd project-directory`
-4. Run `npm install` to get all dependencies. 
-5. Run `npm run start` to start up the program -->
-
-<!-- _This page may be viewed by cloning the [repository](https://github.com/TSiu88/beep-boop.git) from my [GitHub page](https://github.com/TSiu88) and opening the **index.html** file in any web browser._ -->
-
-<!-- _Other things need to run like servers, databases, code, how to install and use program_ -->
+6. Type the URL listed under "Now listening on:" into a web browser to view program
 
 ## Other Technologies Used
-<!-- #### C#
 * _C#_
 * _MSTest_
 * _Razor_
-* _Markdown_ -->
-
-<!-- #### Javascript
-* _HTML_
-* _CSS_
-* _Javascript_
-* _JQuery 3.4.1_
-* _Bootstrap 4.4.1_
-* _ESLint_
-* _Babel_
-* _Jest_
-* _Markdown_ -->
+* _Markdown_
 
 ## Notable Features
 <!-- _features that make project stand out_ -->
