@@ -2,11 +2,22 @@
   Layout = "_Layout";
 }
 @using VendorOrders.Models
-<h1>@Model.Property</h1>
-<ul>
-  <li>ID: @Model.Id</li>
-</ul>
-
+<div class="header">
+  <h1>@Model["vendor"].Name</h1>
+</div>
+<div class="content">
+  <h3>Description: </h3>
+  <p>@Model["vendor"].Description</p>
+  <h3>Their Orders: </h3>
+  <ol>
+    @foreach(Order order in @Model["orders"])
+    {
+      <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
+    }
+  </ol>
+</div>
 <div class="footer">
-  <a href="/items">Return To Home</a>
+  <a href='/vendors/@Model["vendor"].Id/vendors/new'>Add new Order</a>
+  <a href="/vendors">Return to List of Vendors</a>
+  <a href="/">Return To Home</a>
 </div>

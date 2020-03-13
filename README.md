@@ -77,7 +77,7 @@ _README under construction_
 
 ## User Stories
 
-* As a bakery owner, I want to be able to organize vendors and their orders so that I can find requests and their information easily.
+* As a bakery owner, I want to be able to organize vendors and their orders so that I can find requests and their information easily to track business relationships.
 * As a vendor, I want to have my orders organized so I can be assured that the bakery is keeping track of my order so they can fulfill it.
 
 ## Screenshots

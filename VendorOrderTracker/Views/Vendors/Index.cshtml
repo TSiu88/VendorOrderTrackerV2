@@ -2,12 +2,25 @@
   Layout = "_Layout";
 }
 @using VendorOrders.Models
-<h1>Page Title</h1>
-@{foreach (Vendor vendor in Vendor.GetAll())
-{
-  <h4><a href="/vendors/@vendor.Id">@vendor.Name</a></h4>
-}}
+<div class="header">
+  <h1>All Vendors</h1>
+</div>
+<div class="content">
+  @if(@Vendor.GetAll().Count == 0)
+  {
+    <h3>No Vendors added!</h3>
+  }
+  else
+  {
+    <ol>
+      @foreach (Vendor vendor in Model)
+      {
+        <li><a href="/vendors/@vendor.Id">@vendor.Name</a></li>
+      }
+    </ol>
+  }
+</div>
 <div class="footer">
   <a href="/">Return To Home</a>
-  <a href="/vendors/new">Add another</a>
+  <a href="/vendors/new">Add new Vendor</a>
 </div>
