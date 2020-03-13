@@ -3,13 +3,23 @@
 }
 @using VendorOrders.Models
 <div class="header">
-  <h1>@Model["order"].Title</h1>
+  <h1>@Model["vendor"].Name 's Order - @Model["order"].Title</h1>
 </div>
 <div class="content">
   <ul>
     <li>Date: @Model["order"].Date</li>
-    <li>Description: @Model["order"].Description</li>
-    <li>Price: @Model["order"].Price</li>
+    <li>Description:</li>
+    <ul>
+      @if(@Model["order"].Description == null)
+      {
+        <li>No Description Given!</li>
+      }
+      else
+      {
+        <li>@Model["order"].Description</li>
+      }
+    </ul>
+    <li>Price: $@Model["order"].Price</li>
   </ul>
 </div>
 <div class="footer">

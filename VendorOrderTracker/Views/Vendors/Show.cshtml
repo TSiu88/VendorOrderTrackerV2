@@ -9,12 +9,22 @@
   <h3>Description: </h3>
   <p>@Model["vendor"].Description</p>
   <h3>Their Orders: </h3>
-  <ol>
+  
+  @if(@Model["orders"].Count == 0)
+  {
+    <h5>No Orders added!</h5>
+  }
+  else
+  {
+    <ol>
     @foreach(Order order in @Model["orders"])
     {
       <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
     }
-  </ol>
+    </ol>
+  }
+    
+  
 </div>
 <div class="footer">
   <a href='/vendors/@Model["vendor"].Id/orders/new'>Add new Order</a>
