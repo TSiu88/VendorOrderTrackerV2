@@ -13,14 +13,11 @@ namespace VendorOrders.Controllers
       return View(allOrders);
     }
 
-    [HttpGet("/orders/new")]
-    public ActionResult New() { return View(); }
-
-    [HttpPost("/orders")]
-    public ActionResult Create(string title, string description, string date, int price) 
+    [HttpGet("vendors/{vendorId}/orders/new")]
+    public ActionResult New(int vendorId) 
     { 
-      Order myOrder = new Order(title, description, date, price);
-      return RedirectToAction("Index"); 
+      Vendor vendor = Vendor.Find(vendorId);
+      return View(vendor); 
     }
 
     [HttpGet("/orders/{id}")]

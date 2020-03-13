@@ -17,17 +17,34 @@ namespace VendorOrders.Controllers
     public ActionResult New() { return View(); }
 
     [HttpPost("/vendors")]
-    public ActionResult Create(string param, string par) 
+    public ActionResult Create(string name, string description) 
     { 
-      Vendor myVendor = new Vendor(param, par);
+      Vendor myVendor = new Vendor(name, description);
       return RedirectToAction("Index"); 
     }
 
     [HttpGet("/vendors/{id}")]
     public ActionResult Show(int id) 
     { 
+      Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(id);
-      return View(foundVendor); 
+      List<Order> vendorOrders = foundVendor.Orders;
+      model.Add("orders", vendorOrders);
+      model.Add("vendor", foundVendor);
+      return View(model); 
+    }
+
+    [HttpPost("/vendors/{id}/orders")]
+    public ActionResult Create(int vendorId, string title, string description, string date, int price)
+    {
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor foundVendor = Vendor.Find(vendorId);
+      Order newOrder = new Order(title, description, date, price);
+      foundVendor.AddOrder(newOrder);
+      List<Order> vendorOrders = foundVendor.Orders;
+      model.Add("orders", vendorOrders);
+      model.Add("vendor", foundVendor);
+      return View("Show", model);
     }
 
     [HttpPost("/vendors/delete")]
