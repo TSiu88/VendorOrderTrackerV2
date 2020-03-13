@@ -111,5 +111,6 @@ _If there are any question or concerns please contact me at my [email](mailto:ts
 ### License
 
 *This software is licensed under the MIT license*
+*Background Photo by Ales Krivec on [Unsplash](https://unsplash.com/photos/QnNqGoCnBg0)*
 
 Copyright (c) 2020 **_Tiffany Siu_**

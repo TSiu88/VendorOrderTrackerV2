@@ -1,6 +1,33 @@
+body {
+  background: url("../img/background.jpg") center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Bellota', cursive;
+  color: #1E88E5;
+  font-weight: bold;
+  font-size: 16pt;
+}
 h1 {
   text-align: center;
   font-weight: bold;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 34pt;
+}
+
+h2 {
+  text-align: center;
+}
+
+li ::marker {
+  display: list-item;
+  list-style-position: inside;
+  list-style-type: decimal;
+  color: #6d75d1;
+}
+
+a {
+  color: #D81B60;
 }
 
 a:hover {
@@ -8,8 +35,16 @@ a:hover {
   color: darkblue;
 }
 
+textarea {
+  vertical-align: top;
+}
+
 .btn {
   background-color: lightgray;
+}
+
+.btn:hover {
+  background-color: #D81B60;
 }
 
 .container {
@@ -17,6 +52,14 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-top: 60px;
   min-height: 60vh;
-  border: 1px solid blue;
+  border: 2px solid black;
+  background: rgb(204, 204, 204);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.empty {
+  font-weight: bold;
+  color: #B176BB;
 }

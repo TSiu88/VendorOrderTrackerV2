@@ -12,17 +12,26 @@
     <ul>
       @if(@Model["order"].Description == null)
       {
-        <li>No Description Given!</li>
+        <li class="empty">No Description Given!</li>
       }
       else
       {
         <li>@Model["order"].Description</li>
       }
     </ul>
-    <li>Price: $@Model["order"].Price</li>
+    <li>Price: $
+      @if(@Model["order"].Price == 0)
+      {
+        <span class="empty">No Price Given!</span>
+      }
+      else
+      {
+        <span>@Model["order"].Price</span>
+      }
+    </li>
   </ul>
 </div>
 <div class="footer">
-  <a href='/vendors/@Model["vendor"].Id'>Return to Vendor</a>
-  <a href="/">Return To Home</a>
+  <p>[ <a href='/vendors/@Model["vendor"].Id'>Return to Vendor</a> ]
+  [ <a href="/">Return To Home</a> ]</p>
 </div>

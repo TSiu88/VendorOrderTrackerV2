@@ -8,7 +8,7 @@
 <div class="content">
   @if(@Vendor.GetAll().Count == 0)
   {
-    <h3>No Vendors added!</h3>
+    <h3 class="empty">No Vendors added!</h3>
   }
   else
   {
@@ -21,6 +21,6 @@
   }
 </div>
 <div class="footer">
-  <a href="/">Return To Home</a>
-  <a href="/vendors/new">Add new Vendor</a>
+  <p>[ <a href="/">Return To Home</a> ]
+  [ <a href="/vendors/new">Add new Vendor</a> ]</p>
 </div>

@@ -6,13 +6,20 @@
   <h1>@Model["vendor"].Name</h1>
 </div>
 <div class="content">
-  <h3>Description: </h3>
-  <p>@Model["vendor"].Description</p>
-  <h3>Their Orders: </h3>
+  <h2>Description: </h2>
+  @if(@Model["vendor"].Description == null)
+  {
+    <h3 class="empty">No Description Given!</h3>
+  }
+  else
+  {
+    <h3>@Model["vendor"].Description</h3>
+  }
+  <h2>Their Orders: </h2>
   
   @if(@Model["orders"].Count == 0)
   {
-    <h5>No Orders added!</h5>
+    <h3 class="empty">No Orders added!</h3>
   }
   else
   {
@@ -27,7 +34,7 @@
   
 </div>
 <div class="footer">
-  <a href='/vendors/@Model["vendor"].Id/orders/new'>Add new Order</a>
-  <a href="/vendors">Return to List of Vendors</a>
-  <a href="/">Return To Home</a>
+  <p>[ <a href='/vendors/@Model["vendor"].Id/orders/new'>Add new Order</a> ]
+  [ <a href="/vendors">Return to List of Vendors</a> ]
+  [ <a href="/">Return To Home</a> ]</p>
 </div>
