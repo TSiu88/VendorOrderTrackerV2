@@ -84,25 +84,25 @@ This program has an object within an object using C# with Razor and HTML.  The s
 _Here is a preview of what it looks like:_
 
 **Homepage**
-![Snippet of homepage](img/snippet1.png)
+![Snippet of homepage](vendorordertracker/wwwroot/img/snippet1.png)
 
 **Vendor List**
-![Snippet of vendor list](img/snippet3.png)
+![Snippet of vendor list](vendorordertracker/wwwroot/img//snippet3.png)
 
 **Order Input**
-![Snippet of order input](img/snippet4.png)
+![Snippet of order input](vendorordertracker/wwwroot/img//snippet4.png)
 
 <details>
   <summary>Click to expand to view more screenshots</summary>
 
 **Vendor Input**
-![Snippet of vendor input](img/snippet2.png)
+![Snippet of vendor input](vendorordertracker/wwwroot/img//snippet2.png)
 
 **Vender Orders**
-![Snippet of output box](img/snippet5.png)
+![Snippet of output box](vendorordertracker/wwwroot/img//snippet5.png)
 
 **Order Details**
-![Snippet of output box](img/snippet6.png)
+![Snippet of output box](vendorordertracker/wwwroot/img//snippet6.png)
 
 </details>
 
@@ -111,9 +111,9 @@ _Here is a preview of what it looks like:_
 _Tests are done through MSTest and are run from the command line prompt with `dotnet test` in the test folder._
 
 _Some example test:_
-![Snippet of an example test](img/tester1.png)
+![Snippet of an example test](vendorordertracker/wwwroot/img//tester1.png)
 
-![Snippet of an example result](img/test2.png)
+![Snippet of an example result](vendorordertracker/wwwroot/img//test2.png)
 
 ## Known Bugs
 
