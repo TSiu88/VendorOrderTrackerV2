@@ -17,9 +17,9 @@ namespace VendorOrders.Controllers
     public ActionResult New() { return View(); }
 
     [HttpPost("/vendors")]
-    public ActionResult Create(string param) 
+    public ActionResult Create(string param, string par) 
     { 
-      Vendor myVendor = new Vendor(param);
+      Vendor myVendor = new Vendor(param, par);
       return RedirectToAction("Index"); 
     }
 

@@ -19,12 +19,12 @@ namespace VendorOrders.Tests
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
-    [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-    {
-      Order newOrder = new Order("property");
-      string result = newOrder.Property;
-      Assert.AreEqual("Expected", result);
-    }
+    // [TestMethod]
+    // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    // {
+    //   Order newOrder = new Order("property");
+    //   string result = newOrder.Property;
+    //   Assert.AreEqual("Expected", result);
+    // }
   }
 }

@@ -7,8 +7,8 @@
 <!-- [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive) -->
 <!-- [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) -->
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![LastCommit](https://img.shields.io/github/last-commit/tsiu88/VenderOrderTracker)
-![Languages](https://img.shields.io/github/languages/top/tsiu88/VenderOrderTracker)
+![LastCommit](https://img.shields.io/github/last-commit/tsiu88/VendorOrderTracker)
+![Languages](https://img.shields.io/github/languages/top/tsiu88/VendorOrderTracker)
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
 
 ---
@@ -45,7 +45,7 @@ _README under construction_
 *This page may be viewed by:*
 
 1. Download and install .NET Core from the [official website](https://dotnet.microsoft.com/download/dotnet-core/)
-2. Clone the [repository](https://github.com/TSiu88/VenderOrderTracker.git) from my [GitHub page](https://github.com/TSiu88)
+2. Clone the [repository](https://github.com/TSiu88/VendorOrderTracker.git) from my [GitHub page](https://github.com/TSiu88)
 3. Use a command line interface to move to the repository's directory with `cd project-directory`
 4. Run `dotnet restore` and `dotnet build` in command line interface of the repository's directory
 5. Run `dotnet run` to start up the program in the command line interface
@@ -62,49 +62,23 @@ _README under construction_
 
 ## Specifications
 
-<!-- * _List of features the program should do, from simplest to more complex, handling all possible cases.  Can do as text or put in table, with example input and output_
-  * _Example Input: expected input_
-  * _Example Output: expected output_
-* _Example: The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels._
-  * _Example Input: 3_
-  * _Example Output: 3_
-* _Example: The program adds "way" to single-letter words beginning with a vowel._
-  * _Example Input: i_
-  * _Example Output: iway_
-* _The program adds "way" to multi-letter words beginning with a vowel._
-  * _Example Input: open_
-  * _Example Output: openway_
-* _The program takes the single consonant from the beginning of the word and adds to the end with "ay"_
-  * _Example Input: latin_
-  * _Example Output: atinlay_
-* _The program takes all consecutive consonants from the beginning of the word and adds them to the end with "ay"_
-  * _Example Input: translator_
-  * _Example Output: anslatortray_
-* _The program takes beginning consonants and if it contains "q", also take the "u" after it and add them to the end with "ay"_
-  * _Example Input: squeal_
-  * _Example Output: ealsquay_
-* _Etc._ -->
-
-<!-- <details>
+<details>
   <summary>Click to expand to view specifications</summary>
 
 | Specification | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **The program displays welcome message and menu with prices** | Application start | Welcome message and menu displayed |
-| **The program displays special deals in readable format** | Application start | Special deals displayed ("Buy 2, get 1 free" "3 for $5") |
-| **The program takes input of user that is not an integer, then assume 0 ordered** | Bread="aaa", Pastry="" | Bread=0, Pastry=0 |
-| **The program takes number of loaves of bread and pastries and displays totals** | Bread=4, Pastry=4 | Bread=$20, Pastry=$8, Total=$28 |
-| **If input qualifies for special deals, costs calculated using discounted price** | Bread=3, Pastry=3 | Bread=$10, Pastry=$5, Total=$15 |
+| The program displays splash page as homepage with welcome message and link to vendors page | Application start | Welcome message and link displayed on spash page |
+| The program shows message that list is empty for that page | On vendor page with 0 Vendors on List | "No vendors added!" |
+| The program displays list of vendors with link to fill out form to add a new vendor | On vendor page | List of vendors displayed that can be clicked into, link to add new vendor displayed |
+| The user clicks a vendor name to get more information on a vendor and a list of that vendor's orders with a link to add more orders | On a vendor's page | Show vendor information, description, and list of orders with link to add more |
+| The user clicks an order to get more information on that order | On an order's page | Show order information, description, price, date, etc. |
 
-</details> -->
+</details>
 
 ## User Stories
 
-<!-- * As a scheduler, I want to be able to organize nurses vacation schedules without much paperwork so that I can be more efficient.
-* As a scheduler, I want to see a list of requests with the overlapping dates and the nurses that sent in the requests organized by priority so I can see which staff member should have priority in getting the request approved. -->
-
-<!-- * Give stories for people who will use this project and what they'd want it to do.  Can include customers/end users, programmers that maintain code, etc. -->
-
+* As a bakery owner, I want to be able to organize vendors and their orders so that I can find requests and their information easily.
+* As a vendor, I want to have my orders organized so I can be assured that the bakery is keeping track of my order so they can fulfill it.
 
 ## Screenshots
 

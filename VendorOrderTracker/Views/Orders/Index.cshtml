@@ -3,11 +3,11 @@
 }
 @using VendorOrders.Models
 <h1>Page Title</h1>
-@{foreach (Item item in Item.GetAll())
+@{foreach (Order order in Order.GetAll())
 {
-  <h4><a href="/items/@item.Id">@item.Property</a></h4>
+  <h4><a href="/orders/@order.Id">@order.Property</a></h4>
 }}
 <div class="footer">
   <a href="/">Return To Home</a>
-  <a href="/items/new">Add another</a>
+  <a href="/orders/new">Add another</a>
 </div>

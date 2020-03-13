@@ -15,16 +15,16 @@ namespace VendorOrders.Tests
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      Vendor newVendor = new Vendor("property");
+      Vendor newVendor = new Vendor("name", "description");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
-    [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-    {
-      Vendor newVendor = new Vendor("property");
-      string result = newVendor.Property;
-      Assert.AreEqual("Expected", result);
-    }
+    // [TestMethod]
+    // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    // {
+    //   Vendor newVendor = new Vendor("property");
+    //   string result = newVendor.Property;
+    //   Assert.AreEqual("Expected", result);
+    // }
   }
 }
