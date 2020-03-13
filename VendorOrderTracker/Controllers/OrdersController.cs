@@ -20,11 +20,16 @@ namespace VendorOrders.Controllers
       return View(vendor); 
     }
 
-    [HttpGet("/orders/{id}")]
-    public ActionResult Show(int id) 
+    [HttpGet("vendors/{vendorId}/orders/{orderId}")]
+    public ActionResult Show(int vendorId, int orderId) 
     { 
-      Order foundOrder = Order.Find(id);
-      return View(foundOrder); 
+      Vendor foundVendor = Vendor.Find(vendorId);
+      Order foundOrder = Order.Find(orderId);
+      
+      Dictionary<string,object> model = new Dictionary<string,object>();
+      model.Add("order", foundOrder);
+      model.Add("vendor", foundVendor);
+      return View(model); 
     }
 
     [HttpPost("/orders/delete")]

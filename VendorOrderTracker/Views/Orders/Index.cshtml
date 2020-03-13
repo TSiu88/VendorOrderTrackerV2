@@ -3,7 +3,7 @@
 }
 @using VendorOrders.Models
 <div class="header">
-
+  <h1>All Orders</h1>
 </div>
 <div class="content">
 
@@ -11,7 +11,7 @@
 <div class="footer">
 
 </div>
-<h1>Page Title</h1>
+
 @{foreach (Order order in Order.GetAll())
 {
   <h4><a href="/orders/@order.Id">@order.Title</a></h4>

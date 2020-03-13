@@ -2,23 +2,31 @@
   Layout = "_Layout";
 }
 <div class="header">
-
+  <h1>Add a New Order</h1>
 </div>
 <div class="content">
-
+  <form action="/vendors/@Model.Id/orders" method="post">
+    <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+    <div class="form-group">
+      <label for="title">Order Title</label>
+      <input id="title" name="title" type="text" required>
+    </div>
+    <div class="form-group">
+      <label for="date">Order Date</label>
+      <input id="date" name="date" type="date">
+    </div>
+    <div class="form-group">
+      <label for="description">Order Description</label>
+      <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="price">Order Price</label>
+      <input id="price" name="price" type="number">
+    </div>
+    <button type="submit">Add Order</button>
+  </form>
 </div>
 <div class="footer">
-
-</div>
-<h1>Enter a Job Posting Here</h1>
-<form action="/item" method="post">
-  <div class="form-group">
-    <label for="property">Form Item</label>
-    <input id="property" name="property" type="text" required>
-  </div>
-  <button type="submit">Add</button>
-</form>
-<div class="footer">
-  <a href="/">Return to Home</a>
-  <a href="/items">View items</a>
+  <a href="/vendors/@Model.Id">Return to Vendor</a>
+  <a href="/">Return To Home</a>
 </div>

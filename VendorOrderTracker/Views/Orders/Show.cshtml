@@ -3,19 +3,16 @@
 }
 @using VendorOrders.Models
 <div class="header">
-
+  <h1>@Model["order"].Title</h1>
 </div>
 <div class="content">
-
+  <ul>
+    <li>Date: @Model["order"].Date</li>
+    <li>Description: @Model["order"].Description</li>
+    <li>Price: @Model["order"].Price</li>
+  </ul>
 </div>
 <div class="footer">
-
-</div>
-<h1>@Model.Property</h1>
-<ul>
-  <li>ID: @Model.Id</li>
-</ul>
-
-<div class="footer">
-  <a href="/items">Return To Home</a>
+  <a href='/vendors/@Model["vendor"].Id'>Return to Vendor</a>
+  <a href="/">Return To Home</a>
 </div>
