@@ -1,4 +1,4 @@
-# _[Vender Order Tracker](https://github.com/TSiu88/VenderOrderTracker)_
+# _[Vendor Order Tracker](https://github.com/TSiu88/VendorOrderTracker)_
 
 #### _Week 10 Friday Independent Assignment for [Epicodus](https://www.epicodus.com/), 03.13.2020_
 
