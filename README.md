@@ -29,7 +29,7 @@
 
 This program is the Week 10 Friday independent assignment for Epicodus' full time Intro to Programming and C#/React course.  This is a program made to show using the MVC file structure, objects within objects, and RESTful routing naming conventions.
 
-This program is a weba application that allows a user to add vendors that buy from this bakery and then add the orders each vendor has bought from the bakery on the app.  Vendors can be added with a name and description and viewed on a list of all vendors.  The orders are made inside of the vendor's pages and added to a list on the vendor's page of what was ordered.  Orders can have information like the title of the order, the date, a description, and the price.  
+This program is a web application that allows a user to add vendors that buy from this bakery and then add the orders each vendor has bought from the bakery on their own page.  Vendors can be added with a name and description and viewed on a list of all vendors.  The orders are made inside of the vendor's pages and added to a list on the vendor's page of what was ordered.  Orders can have information like the title of the order, the date, a description, and the price.  
 
 ## Setup/Installation Requirements
 
