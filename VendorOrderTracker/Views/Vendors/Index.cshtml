@@ -12,10 +12,11 @@
   }
   else
   {
+    <h3>Vendor Name - Number of Orders</h3>
     <ol>
       @foreach (Vendor vendor in Model)
       {
-        <li><a href="/vendors/@vendor.Id">@vendor.Name</a></li>
+        <li><a href="/vendors/@vendor.Id">@vendor.Name</a> - @vendor.Orders.Count</li>
       }
     </ol>
   }

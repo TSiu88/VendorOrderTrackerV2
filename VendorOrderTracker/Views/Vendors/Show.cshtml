@@ -6,7 +6,7 @@
   <h1>@Model["vendor"].Name</h1>
 </div>
 <div class="content">
-  <h2>Description: </h2>
+  <h2>Vendor Description: </h2>
   @if(@Model["vendor"].Description == null)
   {
     <h3 class="empty">No Description Given!</h3>
@@ -15,7 +15,32 @@
   {
     <h3>@Model["vendor"].Description</h3>
   }
-  <h2>Their Orders: </h2>
+  <h2>Contact Info: </h2>
+  @if(@Model["vendor"].Address == null)
+  {
+    <h3 class="empty">No Address Given!</h3>
+  }
+  else
+  {
+    <h3>@Model["vendor"].Address</h3>
+  }
+  @if(@Model["vendor"].PhoneNumber == null)
+  {
+    <h3 class="empty">No Phone Number Given!</h3>
+  }
+  else
+  {
+    <h3>@Model["vendor"].PhoneNumber</h3>
+  }
+  @if(@Model["vendor"].Email == null)
+  {
+    <h3 class="empty">No Email Given!</h3>
+  }
+  else
+  {
+    <h3>@Model["vendor"].Email</h3>
+  }
+  <h2>Their Orders and Delivery Date: </h2>
   
   @if(@Model["orders"].Count == 0)
   {
@@ -24,13 +49,12 @@
   else
   {
     <ol>
-    @foreach(Order order in @Model["orders"])
-    {
-      <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
-    }
-    </ol>
+    @foreach (KeyValuePair<int,DateTime> orderDate in @Model["dates"])
+      {
+        <li><a href='/vendors/@Model["vendor"].Id/orders/@orderDate.Key'>@Order.Find(orderDate.Key).Title - @orderDate.Value.ToShortDateString()</a></li>
+      }
+  </ol>
   }
-    
   
 </div>
 <div class="footer">
