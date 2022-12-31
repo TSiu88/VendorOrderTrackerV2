@@ -1,12 +1,13 @@
-# _[Vendor Order Tracker](https://github.com/TSiu88/VendorOrderTracker)_
+# _[Vendor Order Tracker V2](https://github.com/TSiu88/VendorOrderTrackerV2)_
 
-#### _Week 10 Friday Independent Assignment for [Epicodus](https://www.epicodus.com/), 03.13.2020_
+#### _Updated Independent Assignment for [Epicodus](https://www.epicodus.com/), 12.30.2022_
 
 #### By _**Tiffany Siu**_
 
-[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
-![LastCommit](https://img.shields.io/github/last-commit/tsiu88/VendorOrderTracker)
-![Languages](https://img.shields.io/github/languages/top/tsiu88/VendorOrderTracker)
+<!-- [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive) -->
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+![LastCommit](https://img.shields.io/github/last-commit/tsiu88/VendorOrderTrackerV2)
+![Languages](https://img.shields.io/github/languages/top/tsiu88/VendorOrderTrackerV2)
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
 
 ---
@@ -27,9 +28,11 @@
 ---
 ## Description
 
-This program is the Week 10 Friday independent assignment for Epicodus' full time Intro to Programming and C#/React course.  This is a program made to show using the MVC file structure, objects within objects, and RESTful routing naming conventions.
+This program was originally the Week 10 Friday independent assignment for Epicodus' full time Intro to Programming and C#/React course.  This is a program made to show using the MVC file structure, objects within objects, and RESTful routing naming conventions.
 
-This program is a web application that allows a user to add vendors that buy from this bakery and then add the orders each vendor has bought from the bakery on their own page.  Vendors can be added with a name and description and viewed on a list of all vendors.  The orders are made inside of the vendor's pages and added to a list on the vendor's page of what was ordered.  Orders can have information like the title of the order, the date, a description, and the price.  
+This program is a web application that allows a user to add vendors that buy from this bakery and then add the orders each vendor has ordered from the bakery on their own page.  Vendors can be added with a name and description and viewed on a list of all vendors.  The orders are made inside of the vendor's pages and added to a list on the vendor's page of what was ordered.  Orders can have information like the title of the order, the date, a description, and the price.  
+
+This has been updated to include being able to add in initial data with a json file so it does not start without any data.  Also orders are now sorted with the oldest orders appearing first in the list.
 
 ## Setup/Installation Requirements
 
@@ -57,7 +60,7 @@ This program is a web application that allows a user to add vendors that buy fro
 * _Markdown_
 
 ## Notable Features
-This program has an object within an object using C# with Razor and HTML.  The site is styled nicely and has a fixed background and footer.
+This program has an object within an object using C# with Razor and HTML.  The site is styled nicely and has a fixed background and footer.  The seed data is written in JSON format and read into the program when it is first run.
 
 ## Specifications
 
@@ -138,4 +141,4 @@ _If there are any question or concerns please contact me at my [email](mailto:ts
 
 *Background Photo by Ales Krivec on [Unsplash](https:/unsplash.com/photos/QnNqGoCnBg0)*
 
-Copyright (c) 2020 **_Tiffany Siu_**
+Copyright (c) 2022 **_Tiffany Siu_**
